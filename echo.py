@@ -7,11 +7,11 @@ def echo(text: str, repititions: int = 3) -> str:
 
     # iterate from the end of the string
     for c in reversed(text):
-        if c not in (' ', '.', '?', '!') and num_chars < 3:
+        if c not in (' ', '.', '?', '!') and num_chars < repititions:
             last_three_chars += c
             num_chars += 1
     final_echo = ""
-    for i in range(num_chars):
+    for i in range(repititions):
         final_echo = final_echo + last_three_chars[i:]
         if i < 2:
             final_echo += '\n'
