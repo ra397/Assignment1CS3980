@@ -26,9 +26,10 @@ def fib(n: int) -> int:
     else:
         return fib(n-1) + fib(n-2)
 
-if __name__ == '__main__':
-    fib(100)
-    plt.plot(fib_inputs, execution_times)
-    plt.xlabel('n in fib(n)')
-    plt.ylabel('Execution Time')
-    plt.show()
+
+fib(100)
+# plot input vs execution time
+plt.plot(fib_inputs, execution_times)
+plt.xlabel('n in fib(n)')
+plt.ylabel('Execution Time')
+plt.show()
