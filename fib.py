@@ -30,6 +30,7 @@ if __name__ == '__main__':
     fib(100)
     # plot input vs execution time
     plt.plot(fib_inputs, execution_times)
+    plt.title('Execution Times For Each Call of Fib(n)')
     plt.xlabel('n in fib(n)')
     plt.ylabel('Execution Time (seconds)')
     plt.show()
