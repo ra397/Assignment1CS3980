@@ -16,7 +16,7 @@ $ python echo.py
    .
 ```
 ## Fibonacci
-A program that implements the fibonacci sequence recursively through the function <code>fib(n)</code> and times the execution of each call that function with the decorator <code>@timer</code>. The <code>@timer</code> decorator prints the execution time of each call as follows.
+A program that computes the <code>n<sup>th</sup></code> fibonacci number in the fibonacci sequence recursively through the function <code>fib(n)</code>. The execution of each call is timed with the decorator <code>@timer</code>. The <code>@timer</code> decorator prints the execution time of each call as follows.
 ```
 Finished in 0.0000s: fib(1) -> 1
 Finished in 0.0000s: fib(0) -> 0
